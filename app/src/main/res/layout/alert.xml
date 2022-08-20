@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--Contenedor card view -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+        android:orientation="vertical"
+
+
+
+
+
+
+
+        >
+        <!--Contenedor container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin"
+            android:layout_height="wrap_content">
+
+            <!--Contenedor TITLE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/size_title"
+                    android:text="!ADVERTENCIA¡"/>
+
+            </LinearLayout>
+
+            <!--Contenedor BODY -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/gray"
+
+                    android:textSize="@dimen/size_subtitle"
+                    android:text="El rejistro del material sera eliminado permanetemente de la base de datos."/>
+
+            </LinearLayout>
+
+            <!--Contenedor botones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAlertOk"
+                    android:layout_marginRight="@dimen/margin"
+                    android:padding="@dimen/padding"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_descripcion"
+                    android:layout_height="match_parent"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:text="OK"
+                    android:textAllCaps="false"
+
+                    app:strokeColor="@color/red"
+                    android:backgroundTint="@color/red"
+                    android:layout_weight="1"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAlerCancel"
+
+                    android:padding="@dimen/padding"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size_descripcion"
+                    android:layout_height="match_parent"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:text="CANCELAR"
+                    android:textAllCaps="false"
+                    app:rippleColor="@color/principal"
+                    app:strokeColor="@color/principal"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+

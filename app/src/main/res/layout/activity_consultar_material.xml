@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ConsultarMaterial">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MATERIALES"
+        android:textSize="@dimen/size_title"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <!--contenedor txt buscar-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="10dp"
+        android:animateLayoutChanges="true"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true">
+        <SearchView
+            android:id="@+id/txtBuscar"
+            android:layout_width="match_parent"
+
+            android:inputType="number"
+           android:background="@color/principal"
+            android:iconifiedByDefault="false"
+            android:queryHint="Numero de material"
+            android:queryBackground="@color/principal"
+
+
+
+
+            android:layout_height="wrap_content">
+
+
+        </SearchView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListaMateriales"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <!--LY PARA MENU ACTION BUTTON FLOAT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        >
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="match_parent"
+            app:fab_addButtonPlusIconColor="@color/black"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonColorPressed="@color/principal"
+            app:fab_expandDirection="right"
+            android:layout_height="wrap_content">
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_add_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/principal"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/ic_add_material"
+
+                />
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_pedidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_colorPressed="@color/principal"
+                app:fab_size="mini"
+                app:fab_icon="@drawable/ic_pedidos"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    </LinearLayout>
+
+</LinearLayout>

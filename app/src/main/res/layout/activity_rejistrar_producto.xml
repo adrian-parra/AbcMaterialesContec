@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RejistrarProducto"
+    android:orientation="vertical">
+
+    <!--LL TITULO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="@dimen/size_title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="MATERIAL"
+            />
+
+    </LinearLayout>
+
+    <!-- LL FORMULARIO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <!-- TXT NO. MATERIAL -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/gray"
+            android:hint="Numero material"
+            app:boxStrokeColor="@color/principal"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+
+
+
+
+            app:helperText="Requerido*"
+            app:helperTextTextAppearance="@dimen/size_descripcion"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="9"
+            app:counterTextColor="@color/gray"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/principal"
+
+
+            app:errorEnabled="true"
+            android:textColorHint="@color/gray"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtMaterial"
+                android:maxLength="10"
+                android:textSize="@dimen/size_descripcion"
+                android:inputType="number"
+                android:textColor="@color/principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- TXT LO. TIENDITA -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/gray"
+            android:hint="Localizacion tiendita"
+            app:boxStrokeColor="@color/principal"
+            app:helperText="Requerido*"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="5"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            android:textColorHint="@color/gray"
+            app:counterTextColor="@color/gray"
+
+
+            app:endIconTint="@color/principal"
+
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtTiendita"
+                android:maxLength="6"
+                android:textSize="@dimen/size_descripcion"
+                android:inputType="text"
+                android:textColor="@color/principal"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TXT LO. ALMACEN -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/gray"
+            android:hint="Localizacion rack"
+            app:boxStrokeColor="@color/principal"
+            app:helperText="Requerido*"
+            app:helperTextTextAppearance="@dimen/size_descripcion"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="4"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            android:textColorHint="@color/gray"
+            app:endIconTint="@color/principal"
+
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:counterTextColor="@color/gray"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtAlmacen"
+                android:maxLength="5"
+
+                android:textSize="@dimen/size_descripcion"
+                android:inputType="text"
+                android:textColor="@color/principal"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- TXT DESCRIPCION -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/gray"
+            android:hint="Descripcion"
+            app:boxStrokeColor="@color/principal"
+            app:helperText="Requerido*"
+            app:helperTextTextAppearance="@dimen/size_descripcion"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            android:textColorHint="@color/gray"
+            app:endIconTint="@color/principal"
+
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+
+            app:counterTextColor="@color/gray"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtDescripcion"
+                android:maxLength="101"
+
+                android:textSize="@dimen/size_descripcion"
+                android:inputType="textMultiLine"
+                android:textColor="@color/principal"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--BTN SUBMIT FORMULARIO -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRejistrar"
+
+            android:padding="@dimen/size_descripcion"
+
+            android:layout_width="match_parent"
+            android:textColor="@color/principal"
+            android:textSize="@dimen/size_descripcion"
+            android:layout_height="match_parent"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Rejistrar"
+            android:textAllCaps="false"
+
+            app:rippleColor="@color/principal"
+            app:strokeColor="@color/principal"
+            app:strokeWidth="1dp"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditar"
+            android:visibility="gone"
+            android:padding="@dimen/size_descripcion"
+            android:layout_width="match_parent"
+            android:textColor="@color/principal"
+            android:textSize="@dimen/size_descripcion"
+            android:layout_height="match_parent"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Editar"
+            android:textAllCaps="false"
+            app:rippleColor="@color/principal"
+            app:strokeColor="@color/principal"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminar"
+            android:visibility="gone"
+            android:padding="@dimen/size_descripcion"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_descripcion"
+            android:layout_height="match_parent"
+            style="@style/Widget.MaterialComponents.Button"
+            android:text="Eliminar"
+            android:textAllCaps="false"
+
+            app:strokeColor="@color/red"
+            android:backgroundTint="@color/red"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

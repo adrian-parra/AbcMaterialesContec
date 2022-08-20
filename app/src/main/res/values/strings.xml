@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">abctrabajo</string>
+
+
+    <string name="padding">5dp</string>
+    <string name="rejistro">MATERIAL REJISTRADO</string>
+</resources>
